@@ -105,20 +105,7 @@ def travel(g):
 
 
 def graphs():
-    G = nx.DiGraph()
-    for j in range(COUNTEdge):
-        SourceNode= (source_box[j].get())
-        DestinationNode=(destination_box[j].get())
-        WeightEdge=(weight_box[j].get())
-        G.add_edges_from([(SourceNode,DestinationNode)], weight=WeightEdge)
 
-    edge_labels = dict([((u, v,), d['weight'])
-                        for u, v, d in G.edges(data=True)])
-    pos = nx.spring_layout(G)
-    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
-    nx.draw(G, pos, node_size=1500, edge_cmap=plt.cm.Reds)
-    nx.draw_networkx_labels(G, pos, font_size=20, font_family='sans-serif')
-    pylab.show()
 
     StartNodeF = (StartNode.get())
     EndNodeF = (EndNode.get())
@@ -135,7 +122,27 @@ def graphs():
         large_graph.add_edge(SourceNodeDik, DestinationNodeDik, WeightEdgeDik)
 
     large_graph.distances
-    print(travel(large_graph))
+    traveled=(travel(large_graph))
+    print(traveled)
+
+    G = nx.DiGraph()
+    for j in range(COUNTEdge):
+        SourceNode= (source_box[j].get())
+        DestinationNode=(destination_box[j].get())
+        WeightEdge=(weight_box[j].get())
+        G.add_edges_from([(SourceNode,DestinationNode)], weight=WeightEdge)
+
+    edge_labels = dict([((u, v,), d['weight'])
+                        for u, v, d in G.edges(data=True)])
+    pos = nx.spring_layout(G)
+    nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels)
+    nx.draw(G, pos, node_size=1500, edge_cmap=plt.cm.Reds)
+    nx.draw_networkx_labels(G, pos, font_size=20, font_family='sans-serif')
+    plt.figtext(0.5,0.05, s=traveled, wrap=True, horizontalalignment='center', fontsize=15)
+    #plt.figtext(1, -0.5, s=traveled, wrap=True, horizontalalignment='center', fontsize=12)
+    #plt.subplots_adjust(bottom=0.02)
+    pylab.show()
+
 
 
 global window
