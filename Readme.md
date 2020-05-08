@@ -15,7 +15,7 @@ Dependent python packages. This code was executed on python v3.7
 
 ## Input 
 
-![Input](https://github.com/adolfdcosta91/Dijkstra-Algorithm-GUI-And-Graph-Plot-/blob/master/GitHub/imgonline-com-ua-twotoone-LjzbGNqqGLzxw6r.png)
+![Input](https://github.com/adolfdcosta91/Dijkstra-Algorithm-GUI-And-Graph-Plot-/blob/master/GitHub/result_f.png)
 
 ## Graph and Result 
 
