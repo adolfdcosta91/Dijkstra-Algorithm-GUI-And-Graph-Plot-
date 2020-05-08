@@ -11,6 +11,10 @@ Dependent python packages. This code was executed on python v3.7
 
 ## Graphical User Interface
 
+![GUI](https://github.com/adolfdcosta91/Dijkstra-Algorithm-GUI-And-Graph-Plot-/blob/master/GitHub/GUI.png)
+
 ## Input 
 
-## Plot and Result 
+## Graph and Result 
+
+![Graph](https://github.com/adolfdcosta91/Dijkstra-Algorithm-GUI-And-Graph-Plot-/blob/master/GitHub/Result.png)
