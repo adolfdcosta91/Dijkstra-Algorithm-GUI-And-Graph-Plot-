@@ -15,8 +15,12 @@ Dependent python packages. This code was executed on python v3.7
 
 ## Input 
 
+User input values from the graph is fed to the system using the GUI
+
 ![Input](https://github.com/adolfdcosta91/Dijkstra-Algorithm-GUI-And-Graph-Plot-/blob/master/GitHub/result_f.png)
 
 ## Graph and Result 
+
+Plots all the possible paths in the graph with their corresponding weights and also defines the shortest path.
 
 ![Graph](https://github.com/adolfdcosta91/Dijkstra-Algorithm-GUI-And-Graph-Plot-/blob/master/GitHub/Result.png)
